@@ -5,9 +5,11 @@
              Title="Login">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Login Page"
-                    HorizontalOptions="CenterAndExpand" />
-            <Button Text="Login" Command="{Binding LogInCommand}"/>
+            <Label Text="LoginPage"
+                   HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="username" Text="{Binding Username}"/>
+            <Entry Placeholder="password" Text="{Binding Password}" IsPassword="True"/>
+            <Button Text="Sign In" Command="{Binding LogInCommand}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

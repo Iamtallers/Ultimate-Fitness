@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using Ultimate_Fitness.PageModels.Base;
+using Ultimate_Fitness.Services.Account;
 using Ultimate_Fitness.Services.Navigation;
 using Xamarin.Forms;
 
@@ -12,6 +13,7 @@ namespace Ultimate_Fitness.PageModels
     {
         private ICommand _logInCommand;
         private INavigationService _navigationService;
+        private IAccountService _accountService;
 
         public ICommand LogInCommand
         {
@@ -19,16 +21,40 @@ namespace Ultimate_Fitness.PageModels
             set => SetProperty(ref _logInCommand, value);
         }
 
-        public LoginPageModel(INavigationService navigationService)
+        private string _username;
+        public string Username
+        {
+            get => _username;
+            set => SetProperty(ref _username, value);
+        }
+
+        private string _password;
+        public string Password
+        {
+            get => _password;
+            set => SetProperty(ref _password, value);
+        }
+
+        public LoginPageModel(INavigationService navigationService, IAccountService accountService)
         {
             _navigationService = navigationService;
+            _accountService = accountService;
 
             LogInCommand = new Command(OnLogInAction);
         }
 
-        private void OnLogInAction(object obj)
+        private async void OnLogInAction(object obj)
         {
-            _navigationService.NavigateToAsync<HomePageModel>();
+            var loginAttempt = await _accountService.LoginAsync(Username, Password);
+            if (loginAttempt)
+            {
+                await _navigationService.NavigateToAsync<HomePageModel>();
+            }
+            else
+            {
+                // Display Alert for faliure
+            }
+
         }
     }
 }

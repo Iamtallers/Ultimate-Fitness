@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using TinyIoC;
 using Ultimate_Fitness.Pages;
+using Ultimate_Fitness.Services.Account;
 using Ultimate_Fitness.Services.Navigation;
 using Xamarin.Forms;
 
@@ -27,6 +28,7 @@ namespace Ultimate_Fitness.PageModels.Base
 
             //Register services (Services are registered as SIngletons by defualt)
             _container.Register<INavigationService, NavigationService>();
+            _container.Register<IAccountService, AccountService>();
         }
 
         public static T Resolve<T>() where T : class
