@@ -5,7 +5,7 @@
              Title="Profile">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Profile Page"
+            <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

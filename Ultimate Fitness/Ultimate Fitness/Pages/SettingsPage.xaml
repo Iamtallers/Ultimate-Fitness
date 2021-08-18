@@ -5,7 +5,7 @@
              Title="Settings">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Settings Page"
+            <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
