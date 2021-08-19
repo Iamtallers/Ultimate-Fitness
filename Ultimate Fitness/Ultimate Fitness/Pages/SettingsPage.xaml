@@ -4,6 +4,7 @@
              xmlns:controls="clr-namespace:Ultimate_Fitness.Controls"
              x:Class="Ultimate_Fitness.Pages.SettingsPage"
              Title="Settings">
+
     <ContentPage.Content>       
         <ScrollView>
             <StackLayout BackgroundColor="#f6f7f8" Spacing="0">
@@ -263,5 +264,8 @@
 
             </StackLayout>
         </ScrollView>
+
+    
+
     </ContentPage.Content>
 </ContentPage>

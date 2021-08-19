@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using Ultimate_Fitness.PageModels.Base;
-using Ultimate_Fitness.PageModels.BrowsersPageModel;
 using Ultimate_Fitness.Services.Navigation;
 using Xamarin.Forms;
 
@@ -66,22 +65,22 @@ namespace Ultimate_Fitness.PageModels
 
         private async void OnFAQAction(object obj)
         {
-            await _navigationService.NavigateToAsync<FAQBrowserModel>();
+            await _navigationService.NavigateToAsync<LoginPageModel>();
         }
 
         private async void OnPolicyAction(object obj)
         {
-            await _navigationService.NavigateToAsync<PrivacyPolicyBrowserModel>();
+            await _navigationService.NavigateToAsync<LoginPageModel>();
         }
 
         private async void OnTermsAction(object obj)
         {
-            await _navigationService.NavigateToAsync<TermsOfServiceBrowserModel>();
+            await _navigationService.NavigateToAsync<LoginPageModel>();
         }
 
         private async void OnHelpAction(object obj)
         {
-            await _navigationService.NavigateToAsync<HelpBrowserModel>();
+            await _navigationService.NavigateToAsync<LoginPageModel>();
         }
 
         private async void OnChangePasswordAction(object obj)

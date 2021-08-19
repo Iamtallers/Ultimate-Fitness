@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using TinyIoC;
-using Ultimate_Fitness.PageModels.BrowsersPageModel;
 using Ultimate_Fitness.Pages;
-using Ultimate_Fitness.Pages.Browsers;
 using Ultimate_Fitness.Services.Account;
 using Ultimate_Fitness.Services.Navigation;
 using Xamarin.Forms;
@@ -25,11 +23,8 @@ namespace Ultimate_Fitness.PageModels.Base
             Register<HomePageModel, HomePage>();
             Register<SettingsPageModel, SettingsPage>();
             Register<ProfilePageModel, ProfilePage>();
-            Register<FAQBrowserModel, FAQBrowser>();
-            Register<HelpBrowserModel, HelpBrowser>();
-            Register<PrivacyPolicyBrowserModel, PrivacyPolicyBrowser>();
-            Register<TermsOfServiceBrowserModel, TermsOfService>();
-
+            Register<WorkoutsPageModel, WorkoutsPage>();
+            Register<SetttingsWebViewModel, SetttingsWebView>();
 
 
             //Register services (Services are registered as SIngletons by defualt)
