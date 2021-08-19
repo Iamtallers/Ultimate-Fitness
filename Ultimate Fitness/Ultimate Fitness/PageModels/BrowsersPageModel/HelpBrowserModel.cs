@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Ultimate_Fitness.PageModels.Base;
 
-namespace Ultimate_Fitness.PageModels
+namespace Ultimate_Fitness.PageModels.BrowsersPageModel
 {
-    class SetttingsWebViewModel : PageModelBase
+    public class HelpBrowserModel : PageModelBase
     {
     }
 }

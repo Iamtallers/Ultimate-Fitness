@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Ultimate_Fitness.Pages
+namespace Ultimate_Fitness.Pages.Browsers
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SetttingsWebView : ContentPage
+    public partial class FAQBrowser : ContentPage
     {
-        public SetttingsWebView()
+        public FAQBrowser()
         {
             InitializeComponent();
         }
