@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -103,7 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ultimate Fitness\Ultimate Fitness.csproj">
-      <Project>{C898DE42-C64A-4951-8B30-71DEF2225EC4}</Project>
+      <Project>{49F4DFC1-0F8F-4BBE-B136-87FD5B318638}</Project>
       <Name>Ultimate Fitness</Name>
     </ProjectReference>
   </ItemGroup>
