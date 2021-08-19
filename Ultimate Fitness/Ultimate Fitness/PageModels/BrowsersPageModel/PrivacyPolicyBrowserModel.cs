@@ -5,7 +5,7 @@ using Ultimate_Fitness.PageModels.Base;
 
 namespace Ultimate_Fitness.PageModels.BrowsersPageModel
 {
-    publi class PrivacyPolicyBrowserModel : PageModelBase
+    public class PrivacyPolicyBrowserModel : PageModelBase
     {
     }
 }
