@@ -41,6 +41,9 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+    <EmbeddedResource Update="Pages\HomePage.xaml">
+=======
     <EmbeddedResource Update="Pages\Browsers\FAQBrowser.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -51,6 +54,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Browsers\TermsOfService.xaml">
+>>>>>>> f6e2b3dc8611c1c9486bfb4229abcd167143c69a
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\LoginPage.xaml">
