@@ -28,6 +28,7 @@ namespace Ultimate_Fitness.PageModels.Base
             Register<FAQBrowserModel, FAQBrowser>();
             Register<HelpBrowserModel, HelpBrowser>();
             Register<PrivacyPolicyBrowserModel, PrivacyPolicyBrowser>();
+            Register<TermsOfServiceBrowserModel, TermsOfService>();
 
 
 
