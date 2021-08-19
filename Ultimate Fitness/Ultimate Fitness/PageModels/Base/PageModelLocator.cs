@@ -23,6 +23,7 @@ namespace Ultimate_Fitness.PageModels.Base
             Register<HomePageModel, HomePage>();
             Register<SettingsPageModel, SettingsPage>();
             Register<ProfilePageModel, ProfilePage>();
+            Register<SetttingsWebViewModel, SetttingsWebView>();
 
 
             //Register services (Services are registered as SIngletons by defualt)
