@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Ultimate_Fitness.Pages.WorkoutsPage">
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout Padding="0,70,0,0">
+
+                
+                <Frame HasShadow="False"
+                   BackgroundColor="Transparent">
+                    <Label Text="Gym Exercises"
+                    FontFamily="Times New Roman"
+                    FontSize="20"
+
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,0"/>
+                </Frame>
+
+
+                <CarouselView
+                ItemsSource="{Binding HomeWorkoutsCategoryList}"
+                HorizontalScrollBarVisibility="Never"
+                PeekAreaInsets="50"
+                HeightRequest="200"
+                IsBounceEnabled="False"
+                Loop="False"
+                >
+
+
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout >
+
+                                <Frame HasShadow="False"
+                       BorderColor="Transparent"
+                       BackgroundColor="White"
+
+                       CornerRadius="5"
+                       Margin="0,-20,0,0"
+                       HeightRequest="120"
+                       HorizontalOptions="Center">
+
+                                    <StackLayout>
+
+                                        <Label Text="{Binding hCategory}"
+                               FontFamily="Times New Roman"
+                               FontAttributes="Italic"
+                               FontSize="Body"
+                               HorizontalTextAlignment="Center"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                                        <Image Source="{Binding hImage}"
+                               Aspect="AspectFill"
+                               HeightRequest="115"
+                               WidthRequest="200"
+                               HorizontalOptions="Center" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+
+
+                <Frame HasShadow="False"
+                    BackgroundColor="Transparent">
+                    <Label Text="Home Exercises"
+                    FontFamily="Times New Roman"
+                    FontSize="20"
+
+                    HorizontalOptions="Center"
+                    Margin="0,-30,0,0"/>
+                </Frame>
+
+                <CarouselView
+                ItemsSource="{Binding GymWorkoutsCategoryList}"
+                HorizontalScrollBarVisibility="Never"
+                PeekAreaInsets="50"
+                HeightRequest="200"
+                IsBounceEnabled="False"
+                Loop="False"
+                >
+
+
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout >
+
+                                <Frame HasShadow="False"
+                       BorderColor="Transparent"
+                       BackgroundColor="White"
+
+                       CornerRadius="5"
+                       Margin="0,-20,0,0"
+                       HeightRequest="120"
+                       HorizontalOptions="Center">
+
+                                    <StackLayout>
+
+                                        <Label Text="{Binding gCategory}"
+                               FontFamily="Times New Roman"
+                               FontAttributes="Italic"
+                               FontSize="Body"
+                               HorizontalTextAlignment="Center"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                                        <Image Source="{Binding gImage}"
+                               Aspect="AspectFill"
+                               HeightRequest="115"
+                               WidthRequest="200"
+                               HorizontalOptions="Center" />
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

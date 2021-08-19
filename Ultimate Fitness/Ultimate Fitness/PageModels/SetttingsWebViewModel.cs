@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Ultimate_Fitness.PageModels.Base;
 
-namespace Ultimate_Fitness.PageModels.BrowsersPageModel
+namespace Ultimate_Fitness.PageModels
 {
-    public class PrivacyPolicyBrowserModel : PageModelBase
+    class SetttingsWebViewModel : PageModelBase
     {
     }
 }

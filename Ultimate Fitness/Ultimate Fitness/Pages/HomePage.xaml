@@ -1,13 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ultimate_Fitness.Pages.HomePage"
-             Title="Home">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+             Title="Dashboard"
+            xmlns:pages="clr-namespace:Ultimate_Fitness.Pages"
+            NavigationPage.HasNavigationBar="False"
+            BarTextColor="Black"
+            BarBackgroundColor="White"
+            UnselectedTabColor="Gray">
+
+    <ContentPage Title="Home">
+        <ContentPage.Content>
+            <Label Text="Dashboard"/>
+        </ContentPage.Content>
+    </ContentPage>
+
+
+
+
+    <ContentPage Title="Nutrition">
+        <Label Text="Nutrition"/>
+    </ContentPage>
+
+    <pages:WorkoutsPage Title="Workouts" />
+
+    <ContentPage Title="Inbox"></ContentPage>
+
+    <pages:SettingsPage Title="Settings" />
+</TabbedPage>
