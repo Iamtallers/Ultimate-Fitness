@@ -16,6 +16,7 @@ namespace Ultimate_Fitness.PageModels
         private ICommand _termscommand;
         private ICommand _policycommand;
         private ICommand _faqcommand;
+
         private INavigationService _navigationService;
 
         public ICommand EditProfileCommand 
@@ -85,7 +86,7 @@ namespace Ultimate_Fitness.PageModels
 
         private async void OnChangePasswordAction(object obj)
         {
-            await _navigationService.NavigateToAsync<LoginPageModel>();
+            await _navigationService.NavigateToAsync<HomePageModel>();
         }
 
         private async void OnEditProfileAction(object obj)
