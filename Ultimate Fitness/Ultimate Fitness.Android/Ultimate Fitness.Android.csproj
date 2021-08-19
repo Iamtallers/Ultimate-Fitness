@@ -102,7 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ultimate Fitness\Ultimate Fitness.csproj">
-      <Project>{82496F94-AD8F-428F-9A55-1361014CF228}</Project>
+      <Project>{E95E31C1-4297-4A55-987A-EA04FE5DC7F0}</Project>
       <Name>Ultimate Fitness</Name>
     </ProjectReference>
   </ItemGroup>
