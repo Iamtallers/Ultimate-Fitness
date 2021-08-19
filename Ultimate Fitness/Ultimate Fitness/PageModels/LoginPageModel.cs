@@ -48,7 +48,7 @@ namespace Ultimate_Fitness.PageModels
             var loginAttempt = await _accountService.LoginAsync(Username, Password);
             if (loginAttempt)
             {
-                await _navigationService.NavigateToAsync<HomePageModel>();
+                await _navigationService.NavigateToAsync<SettingsPageModel>();
             }
             else
             {
