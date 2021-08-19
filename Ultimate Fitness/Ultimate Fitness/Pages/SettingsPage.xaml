@@ -1,13 +1,269 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:Ultimate_Fitness.Controls"
              x:Class="Ultimate_Fitness.Pages.SettingsPage"
              Title="Settings">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ScrollView>
+                <StackLayout BackgroundColor="#f6f7f8" Spacing="0">
+                    <Label
+                    Margin="16,24,0,16"
+                    FontFamily="Montserrat-SemiBold"
+                    FontSize="12"
+                    HorizontalOptions="FillAndExpand"
+                    LineHeight="{OnPlatform Default=-1,
+                                            Android=1.25}"
+                    Text="ACCOUNT"
+                    TextColor="#4a515e"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center" />
+
+                    <controls:TapAnimationGrid
+                    BackgroundColor="#ffffff"
+                    ColumnDefinitions="Auto, *, Auto"
+                    ColumnSpacing="0"
+                    Command="{Binding EditProfileCommand}"
+                    RowSpacing="0"
+                    Tapped="False">
+
+                        <!--  Edit profile icon  -->
+                        <Label
+                        Grid.Column="0"
+                        Margin="16,0,0,0"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Account}"/>
+
+
+                        <!--  Edit profile label  -->
+                        <Label
+                        Grid.Column="1"
+                        Margin="16,12"
+                        FontFamily="Montserrat-Medium"
+                        HorizontalOptions="Start"
+                        Style="{StaticResource TitleLabelStyle}"
+                        Text="Edit Profile"
+                        VerticalOptions="Center"/>
+
+
+                        <!--  Navigation icon  -->
+                        <Label
+                        Grid.Column="2"
+                        Margin="16,8"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Next}" />
+
+
+                    </controls:TapAnimationGrid>
+                    <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
+
+                    <controls:TapAnimationGrid
+                    BackgroundColor="#ffffff"
+                    ColumnDefinitions="Auto, *, Auto"
+                    ColumnSpacing="0"
+                    Command="{Binding ChangePasswordCommand}"
+                    RowSpacing="0"
+                    Tapped="False">
+
+                        <!--  Change Password icon  -->
+                        <Label
+                        Grid.Column="0"
+                        Margin="16,0,0,0"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Account}"/>
+
+                        <!--  Change Password label  -->
+                        <Label
+                        Grid.Column="1"
+                        Margin="16,12"
+                        FontFamily="Montserrat-Medium"
+                        HorizontalOptions="Start"
+                        Style="{StaticResource TitleLabelStyle}"
+                        Text="Change Password"
+                        VerticalOptions="Center"/>
+
+
+                        <!--  Navigation icon  -->
+                        <Label
+                        Grid.Column="2"
+                        Margin="16,8"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Next}" />
+
+
+
+                    </controls:TapAnimationGrid>
+                    <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
+
+                    <Label
+                    Margin="16,40,0,16"
+                    FontFamily="Montserrat-SemiBold"
+                    FontSize="12"
+                    HorizontalOptions="FillAndExpand"
+                    LineHeight="{OnPlatform Default=-1,
+                                            Android=1.25}"
+                    Text="SUPPORT"
+                    TextColor="{DynamicResource Gray-800}"
+                    VerticalOptions="Center"
+                    VerticalTextAlignment="Center">
+
+                    </Label>
+
+                    <!--  Grid for Help label and navigation bar icon  -->
+                    <controls:TapAnimationGrid
+                    BackgroundColor="{DynamicResource Gray-Bg}"
+                    ColumnDefinitions="Auto, *, Auto"
+                    ColumnSpacing="0"
+                    Command="{Binding HelpCommand}"
+                    RowSpacing="0"
+                    Tapped="False">
+
+                        <!--  help icon  -->
+                        <Label
+                        Grid.Column="0"
+                        Margin="16,0,0,0"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Help}" />
+
+                        <!--  Help text label  -->
+                        <Label
+                        Grid.Column="1"
+                        Margin="16,12"
+                        FontFamily="Montserrat-Medium"
+                        HorizontalOptions="Start"
+                        Style="{StaticResource TitleLabelStyle}"
+                        Text="Help"
+                        VerticalOptions="Center" />
+
+
+                        <!--  Navigation icon  -->
+                        <Label
+                        Grid.Column="2"
+                        Margin="16,8"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Next}"/>
+
+                    </controls:TapAnimationGrid>
+                    <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
+
+                    <!--  Grid for Terms of service label and navigation bar icon  -->
+                    <controls:TapAnimationGrid
+                    BackgroundColor="{DynamicResource Gray-Bg}"
+                    ColumnDefinitions="Auto, *, Auto"
+                    ColumnSpacing="0"
+                    Command="{Binding TermsCommand}"
+                    RowSpacing="0"
+                    Tapped="False">
+
+                        <!--  Terms of service icon  -->
+                        <Label
+                        Grid.Column="0"
+                        Margin="16,0,0,0"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Account}" />
+
+                        <!--  Terms of service label  -->
+                        <Label
+                        Grid.Column="1"
+                        Margin="16,12"
+                        FontFamily="Montserrat-Medium"
+                        HorizontalOptions="Start"
+                        Style="{StaticResource TitleLabelStyle}"
+                        Text="Terms of Service"
+                        VerticalOptions="Center" />
+                        <!--  Navigation icon  -->
+                        <Label
+                        Grid.Column="2"
+                        Margin="16,8"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Next}" />
+
+
+                    </controls:TapAnimationGrid>
+                    <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
+
+                    <!--  Grid for Privacy policy label and navigation bar icon  -->
+                    <controls:TapAnimationGrid
+                    BackgroundColor="{DynamicResource Gray-Bg}"
+                    ColumnDefinitions="Auto, *, Auto"
+                    ColumnSpacing="0"
+                    Command="{Binding PolicyCommand}"
+                    RowSpacing="0"
+                    Tapped="False">
+
+                        <!--  Privacy policy icon  -->
+                        <Label
+                        Grid.Column="0"
+                        Margin="16,0,0,0"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Account}" />
+
+
+                        <!--  Privacy policy text label  -->
+                        <Label
+                        Grid.Column="1"
+                        Margin="16,12"
+                        FontFamily="Montserrat-Medium"
+                        HorizontalOptions="Start"
+                        Style="{StaticResource TitleLabelStyle}"
+                        Text="Privacy and Policy"
+                        VerticalOptions="Center" />
+
+                        <!--  Navigation icon  -->
+                        <Label
+                        Grid.Column="2"
+                        Margin="16,8"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Next}" />
+
+                    </controls:TapAnimationGrid>
+                    <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
+
+                    <!--  Grid for FAQs label and navigation bar icon  -->
+                    <controls:TapAnimationGrid
+                    BackgroundColor="{DynamicResource Gray-Bg}"
+                    ColumnDefinitions="Auto, *, Auto"
+                    ColumnSpacing="0"
+                    Command="{Binding FAQCommand}"
+                    RowSpacing="0"
+                    Tapped="False">
+
+                        <!--  FAQs icon  -->
+                        <Label
+                        Grid.Column="0"
+                        Margin="16,0,0,0"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Account}" />
+
+                        <!--  FAQs text label  -->
+                        <Label
+                        Grid.Column="1"
+                        Margin="16,12"
+                        FontFamily="Montserrat-Medium"
+                        HorizontalOptions="Start"
+                        Style="{StaticResource TitleLabelStyle}"
+                        Text="FAQs"
+                        VerticalOptions="Center" />
+
+                        <!--  Navigation icon  -->
+                        <Label
+                        Grid.Column="2"
+                        Margin="16,8"
+                        Style="{StaticResource IconLabelStyle}"
+                        Text="{StaticResource Next}" />
+
+                    </controls:TapAnimationGrid>
+                    <BoxView Style="{StaticResource HorizontalSeparatorStyle}" />
+
+                    <Button  Text="Log  out"
+                             BackgroundColor="MediumOrchid"
+                             Margin="0,24,0,32"
+                             WidthRequest="245"
+                             />
+
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

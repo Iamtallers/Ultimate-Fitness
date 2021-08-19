@@ -1,8 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:themes = "clr-namespace:Ultimate Fitness.Themes;assembly=Ultimate Fitness" 
+             xmlns:themes1="clr-namespace:Ultimate_Fitness.Themes"
              x:Class="Ultimate_Fitness.App">
     <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <themes1:LightTheme />                
+            </ResourceDictionary.MergedDictionaries >
+        </ResourceDictionary>
 
     </Application.Resources>
 </Application>

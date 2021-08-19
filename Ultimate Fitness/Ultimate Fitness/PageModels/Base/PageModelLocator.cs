@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using TinyIoC;
 using Ultimate_Fitness.Pages;
 using Ultimate_Fitness.Services.Account;
